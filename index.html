@@ -9,8 +9,24 @@
         <link href="./style.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-light bg-light">
-            <span class="navbar-brand mb-0 h1">BNicks</span>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <a class="navbar-brand mb-0 h1">Brandi Nicolls</a>
+            <div class="collapse navbar-collapse ">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#About">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact" tabindex="-1">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
@@ -21,6 +37,10 @@
                 <p>Click the button below to obtain a copy of my resume</p>
                 <a class="btn btn-secondary btn-lg" href="#" role="button">Download</a>
             </div>
+        </div>
+        <div class="container-fluid" style="margin: 0 20px">
+            <h3 class="display-4">A Little About Me</h3>
+            <p>I'm a computer scientist currently working as a consultant for a big technology company. I currently reside in Atlanta, GA where I was actually raised.  </p>
         </div>
         <div class="container-fluid">
             <h2 class="display-4">Check out a few of my projects</h2>
@@ -57,6 +77,25 @@
             <!-- Carousel here -->
             <p>Check out more here..</p>
 
+        </div>
+        <div class="container-fluid" style="margin: 0 20px">
+            <a name="Contact"> <h3 class="display-4">Contact Me</h3></a>
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
