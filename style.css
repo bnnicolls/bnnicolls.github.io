@@ -1,6 +1,19 @@
 .jumbotron {
-    width: 100%;
-    size: 20px;
-    color: black;
-    /* background-color: lightgreen; */
+    height: 95vh;
+    background-color: #E0DAD3;
+    padding-bottom: 5px;
+}
+
+.my-navbar{
+    background-color: #E0DAD3;
+}
+
+.brandimain{
+    width: auto;
+    height: 85vh;
+}
+
+.main-info-div{
+    margin:  auto 10vh;
+    border: black;
 }
