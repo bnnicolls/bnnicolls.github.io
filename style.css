@@ -1,19 +1,57 @@
-.jumbotron {
-    height: 95vh;
-    background-color: #E0DAD3;
-    padding-bottom: 5px;
+/* .jumbotron { */
+/* height: 60vh; */
+/* background-color: #efefef; */
+/* padding-bottom: 5px; */
+/* } */
+
+.my-navbar {
+  background-color: #ffffff;
 }
 
-.my-navbar{
-    background-color: #E0DAD3;
+.brandimain {
+  /* display: flex; */
+  z-index: 5;
+  /* position: relative; */
+  /* max-height: 100vh; */
 }
 
-.brandimain{
-    width: auto;
-    height: 85vh;
+.blue-box {
+  color: white;
+  background-color: #caebf2;
+  padding: 5px;
+  font-weight: bold;
+  /* padding-bottom: 5px; */
 }
 
-.main-info-div{
-    margin:  auto 10vh;
-    border: black;
+.black-box {
+  color: white;
+  background-color: black;
+  padding: 5px;
+  font-weight: bold;
+  /* padding-bottom: 5px; */
+}
+
+.red-triangle {
+  background-color: #ff3f3b;
+  border-radius: 10px;
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: 0;
+  height: 15em;
+  width: 15em;
+  margin-top: 40%;
+  margin-left: 20%;
+}
+
+.main-info-div {
+  margin: auto 0vh;
+  border: black;
+}
+
+body {
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+btn-secondary {
+  background-color: black !important;
 }
