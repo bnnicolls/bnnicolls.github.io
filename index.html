@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link href="./style.css" rel="stylesheet">
     </head>
-    <body data-spy="scroll" data-target="#navbar-brandi" data-offset="0">
-        <nav id="navbar-brandi" class="navbar navbar-expand-sm fixed-top navbar-dark" style="background-color: black">
+    <body data-spy="scroll" data-target="#navbar-brandi" data-offset="100">
+        <nav id="navbar-brandi" class="navbar navbar-expand-sm fixed-top bg-light navbar-light" style="background-color: black">
             <a class="navbar-brand mb-0 h1" href="#">Brandi Nicolls</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
                     <hr class="my-4">
                     <!-- Maybe put some social media links here -->
                     <p>Click the button below to obtain a copy of my resume</p>
-                    <a class="btn btn-secondary btn-lg" style="background-color: black; font-weight: bold" href="#" role="button">Download</a>
+                    <a class="btn btn-lg btn-main" href="/BrandiNicollsResume2020.pdf" role="button" download>Download</a>
                 </div>
                 <div class="col-5" style=" display:flex; height: 60vh; margin-left: 10px; margin-right: -10px; overflow:hidden">
                     <div class="red-triangle"></div>
@@ -72,36 +72,31 @@
         <div id="Projects" class="bg-light" style="padding-top: 50px; padding-bottom: 20px; min-height: 500px">
         <div class="container-xl" >
             <a name="Projects"><h2 class="blue-box display-5" style="width: 40%">Featured Side Projects</h2></a>
-            <div class="row" style="display:flex; justify-content: center;">
-                <div class="col-sm-4">
-                    <div class="card" style="width: 18rem;">
+            <div class="row" style="display:flex; justify-content: center; align-items: center">
+                    <div class="card col-md-4" style="width: 18rem;">
                         <!-- <img src="..." class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title">GoDJ</h5>
                             <p class="card-text">Easily find DJs in your area for your next event (Not Hosted) </p>
-                            <a href="#" class="btn btn-secondary">Link</a>
-                            <a href="#" class="btn btn-secondary">GitHub</a>
+                            <a href="#" class="btn btn-main">Link</a>
+                            <a href="#" class="btn btn-main">GitHub</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card" style="width:18em">
+                    <div class="card col-md-4" style="width:18em">
                     <div class="card-body">
                         <h5 class="card-title">SickleCell App</h5>
                         <p class="card-text">Youth can now log their health and help detect pain crises triggers</p>
-                        <a href="#" class="btn btn-secondary">GitHub</a>
+                        <a href="#" class="btn btn-main">GitHub</a>
                     </div>
                 </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card" style="width: 18em">
+                    <div class="card col-md-4" style="width: 18em">
                     <div class="card-body">
-                            <h5 class="card-title">Something Else</h5>
-                            <p class="card-text">I'll think of what to put here until I build my next great app</p>
-                            <a href="#" class="btn btn-secondary">GitHub</a>
+                            <h5 class="card-title">Personal Website</h5>
+                            <p class="card-text">Check out the code behind this website</p>
+                            <a href="#" class="btn btn-main">GitHub</a>
                         </div>
                     </div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -133,7 +128,7 @@
                   <label for="message">Message</label>
                   <textarea type="text" class="form-control" id="message" rows="4"> </textarea>
                 </div>
-                <button type="submit" class="btn btn-secondary" style="background-color: black">Submit</button>
+                <a href="#" role="button" type="submit" class="btn btn-main">Submit</a>
               </form>
         </div>
         </div>

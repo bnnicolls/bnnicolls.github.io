@@ -8,6 +8,10 @@
   background-color: #ffffff;
 }
 
+/* .active {
+  color: #ff3f3b !important;
+} */
+
 .brandimain {
   /* display: flex; */
   z-index: 5;
@@ -48,10 +52,22 @@
   border: black;
 }
 
+.card-text {
+  color: grey;
+  font-weight: normal;
+}
+
 body {
   font-family: Impact, Charcoal, sans-serif;
 }
 
-btn-secondary {
-  background-color: black !important;
+.btn-main {
+  background-color: black;
+  color: white;
+}
+
+a.btn-main:hover {
+  background-color: #ff3f3b;
+  border-color: #ff3f3b;
+  color: white;
 }
