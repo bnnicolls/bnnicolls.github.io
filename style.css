@@ -8,15 +8,29 @@
   background-color: #ffffff;
 }
 
-/* .active {
+.active {
   color: #ff3f3b !important;
-} */
+}
+
+.colorpop-border {
+  border-color: #ff3f3b;
+  border-width: 2px;
+}
+
+.colorpop-text {
+  color: #ff3f3b;
+}
 
 .brandimain {
   /* display: flex; */
   z-index: 5;
   /* position: relative; */
   /* max-height: 100vh; */
+}
+
+.brandiabout {
+  max-height: 40vh;
+  margin: auto 50px;
 }
 
 .blue-box {
