@@ -21,6 +21,10 @@
   color: #ff3f3b;
 }
 
+.project-img {
+  height: 15em;
+}
+
 .brandimain {
   /* display: flex; */
   z-index: 5;
