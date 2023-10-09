@@ -46,9 +46,9 @@
                     <!-- Maybe put some social media links here -->
                     <p>Click below for a download of my resume or social profiles</p>
                     <a class="btn btn-main" href="/BrandiNicollsResume2020.pdf" role="button" download>Download Resume</a>
-                    <i class="fa fa-linkedin-square fa-2x" style="vertical-align: middle; margin-left: 5px" aria-hidden="true"></i>
-                    <i class="fa fa-github fa-2x" style="vertical-align: middle; margin-left:5px"  aria-hidden="true"></i>
-                    <i class="fa fa-bitbucket-square fa-2x" style="vertical-align: middle; margin-left:5px" aria-hidden="true"></i>
+                    <a class="btn btn-main btn-sm" href="https://www.linkedin.com/in/brandi-nicolls-23b477b7/" target="_blank" role="button"><i class="fa fa-linkedin-square fa-2x" style="vertical-align: middle; margin-left: 0px" aria-hidden="true"></i></a>
+                    <a class="btn btn-main btn-sm" href="https://github.com/bnnicolls" target="_blank" role="button"><i class="fa fa-github fa-2x" style="vertical-align: middle; margin-left:0px"  aria-hidden="true"></i></a>
+                    <!-- <i class="fa fa-bitbucket-square fa-2x" style="vertical-align: middle; margin-left:5px" aria-hidden="true"></i> -->
                 </div>
                 <div class="col-sm-5 d-none d-sm-flex" style=" display:flex; height: 60vh; margin-left: 10px; margin-right: -10px; overflow:hidden">
                     <div class="red-triangle"></div>
@@ -75,12 +75,11 @@
                 </div>
             </div>
         </div>
-        <div id="Skills" class="container-xl" style=" min-height: 400px">
+        <div id="Skills" class="container-xl" style=" min-height: 400px; padding-bottom: 30px;">
             <hr class="my-4"/>
             <a name="Skills"> <h2 class="blue-box display-5">Technical Skills</h2></a>
             <div style="min-height: 200px">
-                <p>Some skills I will list here</p>
-                <canvas id="skillChart" width="400" height="400"></canvas>
+                <canvas id="skillChart" width="400" height="200"></canvas>
             </div>
             
         </div>
@@ -96,8 +95,8 @@
                             
                             <h5 class="card-title">GoDJ</h5>
                             <p class="card-text">Easily find DJs in your area for your next event (Not Hosted) </p>
-                            <a href="#" class="btn btn-main">Link</a>
-                            <a href="#" class="btn btn-main">GitHub</a>
+                            <!-- <a href="#" class="btn btn-main">Link</a> -->
+                            <a href="https://github.com/bnnicolls/GoDJ-Web-App" class="btn btn-main">GitHub</a>
                             
                         </div>
                     </div>
@@ -107,7 +106,7 @@
                         <hr class="my-4"/>
                         <h5 class="card-title">SickleCell App</h5>
                         <p class="card-text">Youth can now log their health and help detect pain crises triggers</p>
-                        <a href="#" class="btn btn-main">GitHub</a>
+                        <a href="https://github.com/bnnicolls/SMHow" class="btn btn-main">GitHub</a>
                     </div>
                 </div>
                     <div class="card col-md-4 border-dark" style="min-height: 500px; width: 18em">
@@ -116,7 +115,7 @@
                             <hr class="my-4"/>
                             <h5 class="card-title">Personal Website</h5>
                             <p class="card-text">Check out the code behind this website. You know you want to</p>
-                            <a href="#" class="btn btn-main">GitHub</a>
+                            <a href="https://github.com/bnnicolls/bnnicolls.github.io" class="btn btn-main">GitHub</a>
                         </div>
                     </div>
                 
@@ -191,8 +190,16 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script> -->
     <script src="./source.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script></script>
+
+<script>
+  const ctx = document.getElementById('skillChart');
+  new Chart(ctx, chartconfig);
+</script>
+    
       </body>
     </html>
     </body>

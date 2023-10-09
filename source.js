@@ -1,53 +1,60 @@
-export function renderChart() {
-  const labels = [
-    "Javascript",
-    "Java",
-    "React",
-    "Angular",
-    "NodeJS",
-    "Git",
-    "MongoDB",
-    "SQL"
-  ];
-  const data = {
-    labels: labels,
-    datasets: [
-      {
-        axis: "y",
-        label: "My First Dataset",
-        data: [65, 59, 80, 81, 56, 55, 40, 80],
-        fill: false,
-        backgroundColor: [
-          "rgba(255, 99, 132, 0.2)",
-          "rgba(255, 159, 64, 0.2)",
-          "rgba(255, 205, 86, 0.2)",
-          "rgba(75, 192, 192, 0.2)",
-          "rgba(54, 162, 235, 0.2)",
-          "rgba(153, 102, 255, 0.2)",
-          "rgba(201, 203, 207, 0.2)",
-          "rgba(201, 203, 207, 0.2)"
-        ],
-        borderColor: [
-          "rgb(255, 99, 132)",
-          "rgb(255, 159, 64)",
-          "rgb(255, 205, 86)",
-          "rgb(75, 192, 192)",
-          "rgb(54, 162, 235)",
-          "rgb(153, 102, 255)",
-          "rgb(201, 203, 207)",
-          "rgba(201, 203, 207, 0.2)"
-        ],
-        borderWidth: 1
-      }
-    ]
-  };
-  const chartconfig = {
-    type: "bar",
-    data,
-    options: {
-      indexAxis: "y"
+// export function renderChart() {
+const labels = [
+  "Javascript",
+  "Java",
+  "React",
+  "Angular",
+  "NodeJS",
+  "Git",
+  "MongoDB",
+  "SQL"
+];
+const data = {
+  labels: labels,
+  datasets: [
+    {
+      axis: "y",
+      data: [5, 2, 3, 4, 5, 5, 5, 4],
+      fill: true,
+      backgroundColor: "#caebf2",
+      borderColor: "#c0e2ec",
+      borderWidth: 1,
+      hoverBackgroundColor: "#ff3f3b"
     }
-  };
-  var ctx = document.getElementById("skillChart").getContext("2d");
-  var myChart = new Chart(ctx, chartconfig);
-}
+  ]
+};
+
+let delayed;
+
+const chartconfig = {
+  type: "bar",
+  data,
+  options: {
+    plugins: {
+      legend: false,
+      title: {
+        display: true,
+        text: "Chart.js Bar Chart"
+      }
+    },
+    animation: {
+      onComplete: () => {
+        delayed = true;
+      },
+      delay: (context) => {
+        let delay = 0;
+        if (context.type === "data" && context.mode === "default" && !delayed) {
+          delay = context.dataIndex * 400 + context.datasetIndex * 200;
+        }
+        return delay;
+      }
+    },
+    responsive: true
+    // indexAxis: "y"
+  }
+};
+
+// var ctx = document.getElementById("skillChart").getContext("2d");
+// var myChart = new Chart(ctx, chartconfig);
+// return myChart;
+// }
