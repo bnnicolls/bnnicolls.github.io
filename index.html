@@ -7,7 +7,8 @@
         <title>Brandi Nicolls</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link href="./style.css" rel="stylesheet">
-        <script src="https://use.fontawesome.com/bd325df162.js"></script>
+        <script src="https://kit.fontawesome.com/49728b4eb2.js" crossorigin="anonymous"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     </head>
     <body data-spy="scroll" data-target="#navbar-brandi" data-offset="100">
@@ -26,6 +27,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Photos">Photos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Contact">Contact</a>
@@ -64,13 +68,13 @@
                     <img src="./about.png" class="brandiabout img-fluid">  
                 </div>
                 <div class="col-md-9" style=" margin-top: 15px;">
-                    <ul>
+                    <ul class="about-me-list">
                         <li>I'm a <span class="colorpop-text">full stack developer</span> currently employed as a senior consultant for a large technology company.</li>
                         <li>I earned my <span class="colorpop-text">B.S. in Computer Science</span> from Howard University in Washington, D.C.</li>
-                        <li>Although I was late bloomer in coding, I have always enjoyed creating simple websites since I was child. </li>
+                        <li>Although I consider myself a "late bloomer" in coding, I have always enjoyed creating simple websites since I was child. </li>
                         <li>I was raised and currently reside in <span class="colorpop-text"> Atlanta, GA </span>.</li>
                         <li>I enjoy creating intuitive <span class="colorpop-text">user interfaces</span> that enable me to bring my creativity and problem solving skills together in unique and challenging ways.</li>
-                        <li>In my spare time, I enjoy volunteering with local youth groups. You can also find me working out at a local gym or taking a jog around Atlanta.</li>
+                        <li>In my spare time, I enjoy volunteering with local youth groups. Most recently I volunteered for <span class="colorpop-text">Black Girls Code</span>. You can also find me working out at a local gym or taking a jog around Atlanta.</li>
                     </ul>
                 </div>
             </div>
@@ -87,7 +91,7 @@
         <div class="container-xl" >
             <a name="Projects"><h2 class="blue-box display-5" >Featured Side Projects</h2></a>
             <div class="row card-deck" style="display:flex; justify-content: center; align-items: center;">
-                    <div class="card col-md-4 border-dark" style="min-height: 500px; width: 18em;">
+                    <div class="card col-md-4 border-dark" style="min-height: 500px;">
                         <!-- <img src="..." class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <img class="card-img-top project-img" src="godj.png" alt="Website thumbnail">
@@ -100,7 +104,7 @@
                             
                         </div>
                     </div>
-                    <div class="card col-md-4 border-dark" style="min-height: 500px; width:18em">
+                    <div class="card col-md-4 border-dark" style="min-height: 500px;">
                     <div class="card-body">
                             <img class="card-img-top project-img" src="SpareMeHowThumb.png" alt="Website thumbnail">
                         <hr class="my-4"/>
@@ -109,7 +113,7 @@
                         <a href="https://github.com/bnnicolls/SMHow" class="btn btn-main">GitHub</a>
                     </div>
                 </div>
-                    <div class="card col-md-4 border-dark" style="min-height: 500px; width: 18em">
+                    <div class="card col-md-4 border-dark" style="min-height: 500px;">
                     <div class="card-body">
                             <img class="card-img-top project-img" src="sitephoto.png" alt="Website thumbnail">
                             <hr class="my-4"/>
@@ -122,8 +126,9 @@
             </div>
         </div>
     </div>
-        <div id="Photos" class="container-xl" style="margin-top: 30px; min-height: 400px"> 
+        <div id="Photos" class="container-xl" style="margin-top: 30px; padding-bottom: 30px;"> 
             <h3 class="blue-box display-5">Photography Too!</h3>
+            <p style="text-align:center; margin-top: 10px">In my spare time, I enjoy traveling and taking pictures using my <span class="colorpop-text">Sony A6400</span> digital camera. Check out a few of my favorite photos below.</p>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -135,66 +140,81 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <!-- <a data-flickr-embed="true" href="/assets/DSC00040 title="DSC00177"><img src="https://live.staticflickr.com/65535/53249461566_c54cb39552_h.jpg" width="1600" height="1069" alt="DSC00177"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> -->
-                            <img src="https://live.staticflickr.com/65535/53249461566_c54cb39552_h.jpg" class="d-block w-100" alt="...">
+                            <img src="https://live.staticflickr.com/65535/53249461566_c54cb39552_h.jpg" class="carousel-img d-block" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://live.staticflickr.com/65535/53248588072_a4720092db_h.jpg" class="d-block w-100" alt="...">
+                            <img src="https://live.staticflickr.com/65535/53248588072_a4720092db_h.jpg" class="carousel-img d-block" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://live.staticflickr.com/65535/53249986495_01cf3edf9d_h.jpg" class="d-block w-100" alt="...">
+                            <img src="https://live.staticflickr.com/65535/53249986495_01cf3edf9d_h.jpg" class="carousel-img d-block" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://live.staticflickr.com/65535/53249484326_bdf0a42fa8_h.jpg" class="d-block w-100" alt="...">
+                            <img src="https://live.staticflickr.com/65535/53249484326_bdf0a42fa8_h.jpg" class="carousel-img d-block" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://live.staticflickr.com/65535/53248619827_8676d99aad_h.jpg" class="d-block w-100" alt="...">
+                            <img src="https://live.staticflickr.com/65535/53248619827_8676d99aad_h.jpg" class="carousel-img d-block" alt="...">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                      <!-- <i style="font-size: 60px" class="fas fa-arrow-alt-circle-left"></i> -->
+                      <i style="font-size: 60px; color: #DAE0E5;" class="fa-solid fa-circle-chevron-left"></i>
                       <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                      <i style="font-size: 60px; color: #DAE0E5;" class="fa-solid fa-circle-chevron-right"></i>
                       <span class="sr-only">Next</span>
                     </a>
                   </div>
+                  <p style="text-align:center"> You can also view my complete collection of photos <a href="/" class="colorpop-text">here</a>.</p>
             <!-- <p>Check out more here..</p> -->
 
         </div>
         <div id="Contact" class="bg-light">
         <div class="container-xl" style="padding-top: 50px; padding-bottom: 25px">
             <a name="Contact"> <h3 class=" blue-box display-5">Contact Me</h3></a>
-            <form>
+            <form style="margin: 5px" action="https://postmail.invotes.com/send"
+            method="post" id="email_form">
                 <div class="form-row">
                     <div class="col-sm-6 form-group">
                         <label for="firstname">First Name</label>
-                        <input type="text" class="form-control" id="firstname">
+                        <input type="text" name="extra_first_name" class="form-control" id="firstname" required>
                     </div>
                     <div class="col-sm-6 form-group">
                         <label for="lastname"> Last Name</label>
-                        <input type="text" class="form-control" id="lastname">
+                        <input type="text" name="extra_last_name" class="form-control" id="lastname" required>
                     </div>
                 </div>
                 <div class="form-group">
                   <label for="email">Your Email Address</label>
-                  <input type="email" class="form-control" id="email">
+                  <input type="email" name="reply_to" class="form-control" id="email" required>
                 </div>
                 <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input type="text" class="form-control" id="subject">
+                        <input type="text" name="subject" class="form-control" id="subject" required>
                       </div>
                 <div class="form-group">
                   <label for="message">Message</label>
-                  <textarea type="text" class="form-control" id="message" rows="4"> </textarea>
+                  <textarea type="text" name="text" class="form-control" id="message" rows="4" required> </textarea>
                 </div>
-
+                <div class="g-recaptcha" data-sitekey="6LduqZUoAAAAANylPhovgj4CYfPT5ujTxglX93VR"         data-callback="onRecaptchaSuccess"
+                data-expired-callback="onRecaptchaResponseExpiry"
+                data-error-callback="onRecaptchaError"></div>
+                <!-- Recaptcha Error -->
+      <div
+      id="recaptcha-form-error"
+      style="display: none"
+      class="bg-red-200 rounded py-1 px-2 text-sm sm:text-md"
+    >
+      Please fill the recaptcha checkbox.
+    </div>
                 <input type="hidden" name="access_token" value="r6yzznozc0c2jffdesi3xuwd" />
                 <input type="hidden" name="success_url" value="." />
                 <input type="hidden" name="error_url" value=".?err=1" />
                 
 
-                <input id="submit_form"  role="button" type="submit" class="btn btn-main"></input>
+                <input id="submit_form"  role="button" type="submit" value="Submit" class="btn btn-main"></input>
               </form>
         </div>
         </div>
@@ -216,8 +236,19 @@
 
 <script>
   const ctx = document.getElementById('skillChart');
+  Chart.defaults.font.family = 'Impact, Charcoal, sans-serif';
   new Chart(ctx, chartconfig);
 </script>
+<script>
+        var submitButton = document.getElementById("submit_form");
+        var form = document.getElementById("email_form");
+        form.addEventListener("submit", function (e) {
+            setTimeout(function() {
+                submitButton.value = "Sending...";
+                submitButton.disabled = true;
+            }, 1);
+        });
+    </script> 
     
       </body>
     </html>

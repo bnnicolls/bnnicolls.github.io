@@ -1,6 +1,7 @@
-// export function renderChart() {
+// ChartJS Configurations
 const labels = [
   "Javascript",
+  "Python",
   "Java",
   "React",
   "Angular",
@@ -14,7 +15,7 @@ const data = {
   datasets: [
     {
       axis: "y",
-      data: [5, 2, 3, 4, 5, 5, 5, 4],
+      data: [5, 3.5, 2, 3.5, 4, 5, 5, 4.5, 4],
       fill: true,
       backgroundColor: "#caebf2",
       borderColor: "#c0e2ec",
@@ -34,7 +35,40 @@ const chartconfig = {
       legend: false,
       title: {
         display: true,
-        text: "Chart.js Bar Chart"
+        text: "              My Top Technical Skills",
+        font: {
+          size: 16
+        }
+      }
+    },
+    scales: {
+      x: {
+        display: true,
+        title: {
+          display: true,
+          text: "Programming Languages/Technologies",
+          padding: {
+            top: 10,
+            bottom: 20
+          },
+          font: {
+            weight: "900"
+          }
+        }
+      },
+      y: {
+        display: true,
+        title: {
+          display: true,
+          text: "Skill Level (Ranked 0-5)",
+          padding: {
+            top: 5,
+            bottom: 10
+          },
+          font: {
+            weight: "900"
+          }
+        }
       }
     },
     animation: {
@@ -54,7 +88,42 @@ const chartconfig = {
   }
 };
 
-// var ctx = document.getElementById("skillChart").getContext("2d");
-// var myChart = new Chart(ctx, chartconfig);
-// return myChart;
-// }
+//ReCaptcha Code
+let isRecaptchaValidated = false;
+
+function toggleRecaptchaFormMessage(type = "error", hide = false) {
+  document.getElementById(`recaptcha-form-${type}`).style.display = hide
+    ? "none"
+    : "inherit";
+}
+
+function onRecaptchaSuccess() {
+  isRecaptchaValidated = true;
+}
+
+function onRecaptchaError() {
+  toggleRecaptchaFormMessage("error");
+  toggleRecaptchaFormMessage("success", true);
+}
+
+function onRecaptchaResponseExpiry() {
+  onRecaptchaError();
+}
+
+window.onload = function () {
+  const recaptchaForm = document.getElementById("recaptcha-form");
+  recaptchaForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // failure
+    if (!isRecaptchaValidated) {
+      toggleRecaptchaFormMessage("error");
+      toggleRecaptchaFormMessage("success", true);
+      return;
+    }
+
+    // success
+    toggleRecaptchaFormMessage("error", true);
+    toggleRecaptchaFormMessage("success");
+  });
+};

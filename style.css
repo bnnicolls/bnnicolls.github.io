@@ -90,6 +90,31 @@ a.btn-main:hover {
   color: white;
 }
 
-.carousel-item {
-  max-height: 500px;
+.carousel-img {
+  max-height: 45vh;
+}
+
+a.colorpop-text:hover {
+  color: #ff3f3b;
+}
+
+.carousel.slide {
+  margin-bottom: 10px;
+}
+
+ul.about-me-list > li {
+  margin-bottom: 3%;
+}
+
+.card {
+  margin: 20px;
+}
+
+.carousel-item img {
+  margin: 0 auto;
+  width: auto;
+}
+
+.g-recaptcha {
+  margin-bottom: 10px;
 }
